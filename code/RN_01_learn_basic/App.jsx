@@ -27,8 +27,21 @@ import {NavigationContainer} from '@react-navigation/native';
 // import Home from './app/pages/04_third_cpn/06_imagepicker';
 // import Home from './app/router/01_stackrouter';
 // import Home from './app/router/02_drawerrouter';
-import Home from './app/router/03_bottomrouter';
+// import Home from './app/router/03_bottomrouter';
 // import Home from './app/router/04_materialrouter';
+// import Home from './app/pages/05_basic_api/01_output';
+// import Home from './app/pages/05_basic_api/02_devices';
+// import Home from './app/pages/05_basic_api/03_platform';
+// import Home from './app/pages/05_basic_api/04_stylesheet';
+// import Home from './app/pages/05_basic_api/05_linking';
+// import Home from './app/pages/05_basic_api/06_pixelratio';
+// import Home from './app/pages/05_basic_api/07_backhandler';
+// import Home from './app/pages/05_basic_api/08_permissions';
+// import Home from './app/pages/05_basic_api/09_vibration';
+// import Home from './app/pages/05_basic_api/10_toast';
+// import Home from './app/pages/05_basic_api/11_keyboard';
+// import Home from './app/pages/05_basic_api/12_transform';
+import Home from './app/pages/06_animate/01_simple_animate';
 
 export class App extends Component {
   render() {

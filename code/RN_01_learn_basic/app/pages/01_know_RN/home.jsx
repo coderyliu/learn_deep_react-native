@@ -28,6 +28,17 @@ export class Home extends Component {
   // !这样项目才可以正常运行，以及项目路径中不能包含中文,同时android模拟器需要打开
   // *最开始运行项目的时候，需要一个半小时左右的初始化，下载各种包（非常考验翻墙）
 
+  // ?各种跨平台技术：RN、Flutter、Uni-app、Week、Taro(RN和Flutter是比较胜出的两个技术，处于竞争状态)
+
+  // ?目前大厂应用于RN的移动端应用：
+  // todo 1.facebook的产品 2.Microsoft产品 3.腾讯(QQ) 百度(百度) 京东
+
+  // ?RN和Flutter的简单比较?
+  // todo 1.RN的门槛较低，只需要学习web技术  Flutter的门槛还需要学习Dart语言，难度较高
+  // todo 2.Flutter的性能是比RN高的，但随着近些年来RN的版本更新，性能正在趋于Flutter
+  // todo 3.Flutter产于geogle RN产于Facebook
+  // todo 4.学习RN更有利于大前端技术方向发展,通过React我们可以开发Web端、通过RN开发移动端、通过elector开发桌面端
+
   render() {
     return (
       <View>
