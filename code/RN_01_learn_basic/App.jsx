@@ -1,6 +1,6 @@
 import 'react-native-gesture-handler';
 import React, {Component} from 'react';
-import {SafeAreaView, Text} from 'react-native';
+import {Platform, UIManager} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 
 // import Home from './app/pages/01_know_RN/home'
@@ -41,9 +41,28 @@ import {NavigationContainer} from '@react-navigation/native';
 // import Home from './app/pages/05_basic_api/10_toast';
 // import Home from './app/pages/05_basic_api/11_keyboard';
 // import Home from './app/pages/05_basic_api/12_transform';
-import Home from './app/pages/06_animate/01_simple_animate';
+// import Home from './app/pages/06_animate/01_simple_animate';
+// import Home from './app/pages/06_animate/02_animate_way';
+// import Home from './app/pages/06_animate/03_animate_cpn';
+// import Home from './app/pages/06_animate/04_animate_decay';
+// import Home from './app/pages/06_animate/05_animate_spring';
+// import Home from './app/pages/06_animate/06_animate_timing';
+// import Home from './app/pages/06_animate/07_animate_xy';
+// import Home from './app/pages/06_animate/08_animate_compose';
+// import Home from './app/pages/06_animate/09_animate_bug';
+import Home from './app/pages/06_animate/10_layout_animate';
 
 export class App extends Component {
+  componentDidMount() {
+    // ?使用LayoutAnimation的前提，判断是否可用 可用设置为true
+    if (
+      Platform.OS === 'android' &&
+      UIManager.setLayoutAnimationEnabledExperimental
+    ) {
+      UIManager.setLayoutAnimationEnabledExperimental(true);
+    }
+  }
+
   render() {
     return (
       <NavigationContainer>
