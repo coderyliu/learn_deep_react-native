@@ -12,7 +12,7 @@ import {
 
 // ?forwardRef做一层包裹，获取函数式组件ref实例
 const AppModal = forwardRef((props, ref) => {
-  const {title, btnTitle = '确认', handleBtnPress} = props;
+  const {title, btnTitle = '确认', handleBtnPress, hideModalAction} = props;
 
   const [isShowModal, setIsShowModal] = useState(false);
 
@@ -23,6 +23,7 @@ const AppModal = forwardRef((props, ref) => {
 
   // 隐藏modal
   const hideModal = () => {
+    hideModalAction();
     setIsShowModal(false);
   };
 
