@@ -23,6 +23,8 @@ public class MainApplication extends Application implements ReactApplication {
         protected List<ReactPackage> getPackages() {
           @SuppressWarnings("UnnecessaryLocalVariable")
           List<ReactPackage> packages = new PackageList(this).getPackages();
+          // 桥接原生的主要包括：桥接原生的API、属性、以及桥接原生组件
+          // 通过添加ReactPackage达到桥接的目的
           // Packages that cannot be autolinked yet can be added manually here, for example:
           // packages.add(new MyReactNativePackage());
           return packages;
