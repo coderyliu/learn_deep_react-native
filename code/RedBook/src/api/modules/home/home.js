@@ -1,0 +1,2 @@
+import lyRequest from '../../index';
+
