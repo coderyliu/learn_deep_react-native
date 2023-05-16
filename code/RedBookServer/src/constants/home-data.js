@@ -1,6 +1,492 @@
 exports.homeFindList = {
   recommend: [
     {
+      note_card: {
+        display_title: "大连值得打卡的18个地方",
+        user: {
+          nick_name: "溺水的人",
+          avatar:
+            "https://sns-avatar-qc.xhscdn.com/avatar/5d3fc378e4a4900001db360e.jpg",
+          user_id: "5d3fc3390000000010030316",
+          nickname: "溺水的人",
+        },
+        interact_info: {
+          liked: false,
+          liked_count: "90",
+        },
+        cover: {
+          height: 1792,
+          width: 1344,
+          url: "https://sns-img-qc.xhscdn.com/df8381ab-fbdc-ab80-5682-9de01d343f1c",
+          trace_id: "1000g0082f2unlhcgo0005n9vocsk60omes8sfvg",
+          file_id: "df8381ab-fbdc-ab80-5682-9de01d343f1c",
+        },
+        type: "normal",
+      },
+      track_id: "2bo4rjyz57fvsrngc9280",
+      id: "64571612000000001303e80a",
+      model_type: "note",
+    },
+    {
+      id: "64545a60000000001203c0cb",
+      model_type: "note",
+      note_card: {
+        user: {
+          nick_name: "张国荣",
+          avatar:
+            "https://sns-avatar-qc.xhscdn.com/avatar/645c173f04c28aa15eab260b.jpg",
+          user_id: "5c2ee6e3000000000700917a",
+          nickname: "张国荣",
+        },
+        interact_info: {
+          liked: false,
+          liked_count: "29147",
+        },
+        cover: {
+          height: 1440,
+          width: 1080,
+          url: "https://sns-img-qc.xhscdn.com/3a377869-e0b5-b53d-9b67-836ffac21f40",
+          trace_id: "1000g0082eo9326igo0105n1esrhhp4bqeh2a4rg",
+          file_id: "3a377869-e0b5-b53d-9b67-836ffac21f40",
+        },
+        type: "normal",
+        display_title: "把手机擦干净，亮度调到最大",
+      },
+      track_id: "2bo4rjyz57fvsrngc9280",
+    },
+    {
+      id: "646325540000000027003b97",
+      model_type: "note",
+      note_card: {
+        type: "normal",
+        display_title: "配了枪的死猪更拽了呢",
+        user: {
+          nick_name: "Yolo",
+          avatar:
+            "https://sns-avatar-qc.xhscdn.com/avatar/645d9a9a5ce02c30f0ffba0d.jpg",
+          user_id: "5a9f54754eacab0278d2b67e",
+          nickname: "Yolo",
+        },
+        interact_info: {
+          liked: false,
+          liked_count: "126",
+        },
+        cover: {
+          height: 720,
+          width: 720,
+          url: "https://sns-img-qc.xhscdn.com/d42c9084-f375-3d85-9154-54ac3d6c52a3",
+          trace_id: "1000g0082gi26gpii00004a35jfa7bdjubje0jl8",
+          file_id: "d42c9084-f375-3d85-9154-54ac3d6c52a3",
+        },
+      },
+      track_id: "2bo4rjyz57fvsrngc9280",
+    },
+    {
+      id: "641ee8ba0000000013011ea1",
+      model_type: "note",
+      note_card: {
+        display_title: "100组一次全消灭！100组英语英语易混词归纳",
+        user: {
+          nick_name: "嘻嘻子的学习日记",
+          avatar:
+            "https://sns-avatar-qc.xhscdn.com/avatar/641aeedf348916cd592d3f5d.jpg",
+          user_id: "641ae9e0000000001400c81f",
+          nickname: "嘻嘻子的学习日记",
+        },
+        interact_info: {
+          liked: false,
+          liked_count: "12421",
+        },
+        cover: {
+          height: 1706,
+          width: 1280,
+          url: "https://sns-img-qc.xhscdn.com/e4713500-f739-ebc7-c7fb-55657136b02b",
+          trace_id: "1000g008287gjjmefm06g5p0qt7g51i0vf7hameo",
+          file_id: "e4713500-f739-ebc7-c7fb-55657136b02b",
+        },
+        type: "normal",
+      },
+      track_id: "2bo4rjyz57fvsrngc9280",
+    },
+    {
+      id: "645356a3000000001303fb42",
+      model_type: "note",
+      note_card: {
+        type: "normal",
+        display_title: "这还有什么理由能拒绝换iPhone 15系列吗？",
+        user: {
+          avatar:
+            "https://sns-avatar-qc.xhscdn.com/avatar/644cb0649329aa25ed964b51.jpg",
+          user_id: "5c9f2c600000000017021c10",
+          nickname: "虾丸数码",
+          nick_name: "虾丸数码",
+        },
+        interact_info: {
+          liked: false,
+          liked_count: "689",
+        },
+        cover: {
+          file_id: "c51978d7-3fa1-0750-e25c-772102267e8f",
+          height: 1440,
+          width: 1080,
+          url: "https://sns-img-qc.xhscdn.com/c51978d7-3fa1-0750-e25c-772102267e8f",
+          trace_id: "spectrum/1000g0k02eka635mgu0005n4v5hg5s70g55634q8",
+        },
+      },
+      track_id: "2bo4rjyz57fvsrngc9280",
+    },
+    {
+      id: "645ae4a700000000070389c1",
+      model_type: "note",
+      note_card: {
+        type: "video",
+        display_title: "就现在 告诉我5月20号那天最想见谁",
+        user: {
+          nick_name: "A晨懂事",
+          avatar:
+            "https://sns-avatar-qc.xhscdn.com/avatar/644a7e965494bd5c8d2dd1c6.jpg",
+          user_id: "60b73f59000000000100b4ac",
+          nickname: "A晨懂事",
+        },
+        interact_info: {
+          liked: false,
+          liked_count: "32",
+        },
+        cover: {
+          file_id: "21f34b65-ea06-f322-7dbf-4dee3461da5f",
+          height: 1080,
+          width: 1440,
+          url: "https://sns-img-qc.xhscdn.com/21f34b65-ea06-f322-7dbf-4dee3461da5f",
+          trace_id: "1000g0082fhqjeq2h80005o5n7tcg9d5cnng0n1o",
+        },
+      },
+      track_id: "2bo4rjyz57fvsrngc9280",
+    },
+    {
+      model_type: "note",
+      note_card: {
+        type: "normal",
+        display_title: "🔥心理测试：你是怎么拿手机的呢？",
+        user: {
+          user_id: "637196d7000000001f016211",
+          nickname: "北京唯学培训",
+          nick_name: "北京唯学培训",
+          avatar:
+            "https://sns-avatar-qc.xhscdn.com/avatar/6373087c18813d0001071f48.jpg",
+        },
+        interact_info: {
+          liked: false,
+          liked_count: "9167",
+        },
+        cover: {
+          file_id: "b8f10764-2b2e-b42f-5a5e-cf3c381b6260",
+          height: 1660,
+          width: 1245,
+          url: "https://sns-img-qc.xhscdn.com/b8f10764-2b2e-b42f-5a5e-cf3c381b6260",
+          trace_id: "spectrum/1000g0k02907edfkfk0005orhirbnqoghe8jeuu0",
+        },
+      },
+      track_id: "2bo4rjyz57fvsrngc9280",
+      id: "64253cdd0000000013011d16",
+    },
+    {
+      id: "645f29c1000000001203d136",
+      model_type: "note",
+      note_card: {
+        interact_info: {
+          liked_count: "378",
+          liked: false,
+        },
+        cover: {
+          height: 1104,
+          width: 828,
+          url: "https://sns-img-qc.xhscdn.com/12cc7bc0-486c-425b-1022-1d16f79d986e",
+          trace_id: "1000g0082g2gavdui20005nm17su0bl2v0q9f50g",
+          file_id: "12cc7bc0-486c-425b-1022-1d16f79d986e",
+        },
+        type: "normal",
+        display_title: "9⃣️个男生站姿拍照姿势｜一学就会🉑️",
+        user: {
+          nickname: "jimmy",
+          nick_name: "jimmy",
+          avatar:
+            "https://sns-avatar-qc.xhscdn.com/avatar/63f5b8639993b32d804e95c4.jpg",
+          user_id: "5ec13f3c000000000101d45f",
+        },
+      },
+      track_id: "2bo4rjyz57fvsrngc9280",
+    },
+    {
+      id: "644f184d0000000027011717",
+      model_type: "note",
+      note_card: {
+        type: "normal",
+        display_title: "过来人血泪经验‼️别什么都不懂就开始考公",
+        user: {
+          nickname: "云云老师公考咨询",
+          nick_name: "云云老师公考咨询",
+          avatar:
+            "https://sns-avatar-qc.xhscdn.com/avatar/64462ed06c712300015c7bcb.jpg",
+          user_id: "63d522470000000026013b76",
+        },
+        interact_info: {
+          liked_count: "1919",
+          liked: false,
+        },
+        cover: {
+          url: "https://sns-img-qc.xhscdn.com/e95534bf-fda2-09fe-41ee-8cc32c1ad800",
+          trace_id: "1000g0082e3nqovmgu06g5oul493piermmuel378",
+          file_id: "e95534bf-fda2-09fe-41ee-8cc32c1ad800",
+          height: 1440,
+          width: 1080,
+        },
+      },
+      track_id: "2bo4rjyz57fvsrngc9280",
+    },
+    {
+      id: "64477a7900000000130344b1",
+      model_type: "note",
+      note_card: {
+        type: "normal",
+        display_title: "新手菜单合集来了！赶紧动手起来叭",
+        user: {
+          nickname: "厨记",
+          nick_name: "厨记",
+          avatar:
+            "https://sns-avatar-qc.xhscdn.com/avatar/6444d00eec2be016c1d1f7ae.jpg",
+          user_id: "5bae304d05223a000168a6db",
+        },
+        interact_info: {
+          liked: false,
+          liked_count: "1352",
+        },
+        cover: {
+          file_id: "c3f0493c-af1a-e651-c079-c13d098c44e2",
+          height: 2560,
+          width: 1920,
+          url: "https://sns-img-qc.xhscdn.com/c3f0493c-af1a-e651-c079-c13d098c44e2",
+          trace_id: "1000g0082d5vmptogs06g4b70cio4r9mr42j3mq8",
+        },
+      },
+      track_id: "2bo4rjyz57fvsrngc9280",
+    },
+    {
+      note_card: {
+        type: "normal",
+        display_title: "日入💰600＋程序员，都用的“接私活网站",
+        user: {
+          nick_name: "敲代码的阿sir~",
+          avatar:
+            "https://sns-avatar-qc.xhscdn.com/avatar/641a6ffa68c57054fc825df2.jpg",
+          user_id: "6412e70000000000140110be",
+          nickname: "敲代码的阿sir~",
+        },
+        interact_info: {
+          liked: false,
+          liked_count: "390",
+        },
+        cover: {
+          trace_id: "1000g0082geg59lei006g5p0iss05245up46mobg",
+          file_id: "6033a0ef-1029-0775-61f5-6d8a515f94ae",
+          height: 1414,
+          width: 1080,
+          url: "https://sns-img-qc.xhscdn.com/6033a0ef-1029-0775-61f5-6d8a515f94ae",
+        },
+      },
+      track_id: "2bo4rjyz57fvsrngc9280",
+      id: "64623bc70000000013000a63",
+      model_type: "note",
+    },
+    {
+      track_id: "2bo4rjyz57fvsrngc9280",
+      id: "64363e05000000001300d050",
+      model_type: "note",
+      note_card: {
+        type: "normal",
+        display_title: "应届三无毕业生，也能写出满分简历，直接抄",
+        user: {
+          nick_name: "桔子求职-简历制作",
+          avatar:
+            "https://sns-avatar-qc.xhscdn.com/avatar/641c524ee504802fffce9a9d.jpg",
+          user_id: "624113840000000021022190",
+          nickname: "桔子求职-简历制作",
+        },
+        interact_info: {
+          liked: false,
+          liked_count: "8993",
+        },
+        cover: {
+          url: "https://sns-img-qc.xhscdn.com/bcca85dc-5d90-4403-4557-d15ef8d68310",
+          trace_id: "1000g0082b2l8bnoh006g5oi12e28c8cgup7cp7g",
+          file_id: "bcca85dc-5d90-4403-4557-d15ef8d68310",
+          height: 2560,
+          width: 1920,
+        },
+      },
+    },
+    {
+      id: "645e314e0000000027001037",
+      model_type: "note",
+      note_card: {
+        display_title: "高分9.0‼️一口气炫6集【年度悬疑巨制】🆘",
+        user: {
+          nick_name: "未来先森爱看剧",
+          avatar:
+            "https://sns-avatar-qc.xhscdn.com/avatar/621f08b2dbc3920f836ef96b.jpg",
+          user_id: "5b0fed42e8ac2b1c04ce0d57",
+          nickname: "未来先森爱看剧",
+        },
+        interact_info: {
+          liked: false,
+          liked_count: "7176",
+        },
+        cover: {
+          file_id: "76fc3cb8-2046-4c7b-5728-87d431552dbd",
+          height: 1554,
+          width: 1170,
+          url: "https://sns-img-qc.xhscdn.com/76fc3cb8-2046-4c7b-5728-87d431552dbd",
+          trace_id: "1000g0082fujo7cki20504a5qn0mk43anmup4m00",
+        },
+        type: "normal",
+      },
+      track_id: "2bo4rjyz57fvsrngc9280",
+    },
+    {
+      id: "64526cee000000001303c821",
+      model_type: "note",
+      note_card: {
+        type: "normal",
+        display_title: "十里春风 不及相遇有你 | 村上春树",
+        user: {
+          nickname: "浅语浪漫集",
+          nick_name: "浅语浪漫集",
+          avatar:
+            "https://sns-avatar-qc.xhscdn.com/avatar/64376b0647807117dee211f6.jpg",
+          user_id: "640868ca000000002a00ab82",
+        },
+        interact_info: {
+          liked: false,
+          liked_count: "895",
+        },
+        cover: {
+          trace_id: "1000g0082ego50gih40005p08d35ahas2e274lv8",
+          file_id: "dbd816d0-52b4-74be-c2dd-739700343248",
+          height: 1920,
+          width: 1440,
+          url: "https://sns-img-qc.xhscdn.com/dbd816d0-52b4-74be-c2dd-739700343248",
+        },
+      },
+      track_id: "2bo4rjyz57fvsrngc9280",
+    },
+    {
+      id: "643780350000000013006e99",
+      model_type: "note",
+      note_card: {
+        cover: {
+          file_id: "9e6188a3-fffa-4c94-81f1-1f62f484ce98",
+          height: 1920,
+          width: 1440,
+          url: "https://sns-img-qc.xhscdn.com/9e6188a3-fffa-4c94-81f1-1f62f484ce98",
+          trace_id: "1000g0082b7iielch20005nri8v8088pe9822vl0",
+        },
+        type: "normal",
+        display_title: "男生夏季穿搭合集｜一周穿搭不重样！",
+        user: {
+          nick_name: "不艺术小杨",
+          avatar:
+            "https://sns-avatar-qc.xhscdn.com/avatar/64021a3eebfcc2e90d489f76.jpg",
+          user_id: "5f7247d0000000000100232e",
+          nickname: "不艺术小杨",
+        },
+        interact_info: {
+          liked: false,
+          liked_count: "3220",
+        },
+      },
+      track_id: "2bo4rjyz57fvsrngc9280",
+    },
+    {
+      id: "642d41cd0000000013012924",
+      model_type: "note",
+      note_card: {
+        type: "normal",
+        display_title: "6r一杯！雪王冰淇淋正确打开方式",
+        user: {
+          user_id: "5b77bdfa5b953400011f8c71",
+          nickname: "草莓大福go",
+          nick_name: "草莓大福go",
+          avatar:
+            "https://sns-avatar-qc.xhscdn.com/avatar/6054a158b3e438b562520671.jpg",
+        },
+        interact_info: {
+          liked: false,
+          liked_count: "5302",
+        },
+        cover: {
+          file_id: "4f137bf7-44ff-7ab7-f676-c088113a7480",
+          height: 1920,
+          width: 1440,
+          url: "https://sns-img-qc.xhscdn.com/4f137bf7-44ff-7ab7-f676-c088113a7480",
+          trace_id: "1000g00829vi35b4h40004afuehuvl33hsk3ark0",
+        },
+      },
+      track_id: "2bo4rjyz57fvsrngc9280",
+    },
+    {
+      model_type: "note",
+      note_card: {
+        type: "normal",
+        display_title: "大学别瞎卷💡看懂这12条嘎嘎弯道超车！",
+        user: {
+          nick_name: "小詹同学有话说",
+          avatar:
+            "https://sns-avatar-qc.xhscdn.com/avatar/644bcc5ec2358b601fc971e5.jpg",
+          user_id: "5ff396b600000000010070a2",
+          nickname: "小詹同学有话说",
+        },
+        interact_info: {
+          liked: false,
+          liked_count: "1743",
+        },
+        cover: {
+          file_id: "c86b9fa7-1c38-1f93-0c73-f9b75e5640ae",
+          height: 1707,
+          width: 1280,
+          url: "https://sns-img-qc.xhscdn.com/c86b9fa7-1c38-1f93-0c73-f9b75e5640ae",
+          trace_id: "spectrum/1000g0k02efu5fv2gu0005nvjiqr08s52pqju868",
+        },
+      },
+      track_id: "2bo4rjyz57fvsrngc9280",
+      id: "6452391600000000130016e3",
+    },
+    {
+      id: "645cfab8000000000800fe3d",
+      model_type: "note",
+      note_card: {
+        cover: {
+          file_id: "0730fb89-c400-af00-75f1-ae272c821e16",
+          height: 1440,
+          width: 1080,
+          url: "https://sns-img-qc.xhscdn.com/0730fb89-c400-af00-75f1-ae272c821e16",
+          trace_id: "1000g0082fpvcq6eho0005oo6v9dkg4tvntqqnn0",
+        },
+        type: "video",
+        display_title: "男生发型这样烫真的帅了 简单好打理✓",
+        user: {
+          nick_name: "上海男士剪烫设计苏玉老师",
+          avatar:
+            "https://sns-avatar-qc.xhscdn.com/avatar/6433d829b5f7fe12695606ef.jpg",
+          user_id: "6306fa5b00000000120013bf",
+          nickname: "上海男士剪烫设计苏玉老师",
+        },
+        interact_info: {
+          liked: false,
+          liked_count: "896",
+        },
+      },
+      track_id: "2bo4rjyz57fvsrngc9280",
+    },
+    {
       id: "6446a7b400000000270112d8",
       model_type: "note",
       note_card: {

@@ -1,12 +1,6 @@
 import React, {memo} from 'react';
-import {
-  View,
-  StyleSheet,
-  TouchableOpacity,
-  Image,
-  Text,
-  useWindowDimensions,
-} from 'react-native';
+import {View, StyleSheet, TouchableOpacity, Image, Text} from 'react-native';
+import {useNavigation} from '@react-navigation/native';
 
 import icon_heart from '../../../../assets/images/icon_heart.png';
 import icon_un_heart from '../../../../assets/images/icon_heart_empty.png';
@@ -17,10 +11,10 @@ const CardItem = memo(props => {
     index,
   } = props;
 
-  // 屏幕适配
-  // const {width: screenWidth} = useWindowDimensions();
-
-  const handleCardItemPress = () => {};
+  const navigation = useNavigation();
+  const handleCardItemPress = () => {
+    navigation.navigate('articleDetail', {articleId: props.dataInfo?.id});
+  };
 
   const handleHeartPress = () => {};
 
@@ -29,7 +23,6 @@ const CardItem = memo(props => {
       style={[
         styles.root,
         {
-          // width: (screenWidth - 10) >> 1,
           // height:(note_card?.cover?.height / note_card?.cover?.width) * 250 + 100,
           marginRight: index % 2 ? 5 : 0,
         },
