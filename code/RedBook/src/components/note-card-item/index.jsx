@@ -2,10 +2,10 @@ import React, {memo} from 'react';
 import {View, StyleSheet, TouchableOpacity, Image, Text} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 
-import icon_heart from '../../../../assets/images/icon_heart.png';
-import icon_un_heart from '../../../../assets/images/icon_heart_empty.png';
+import ResizeImage from '../../base-ui/resize-image';
+import Heart from '../../base-ui/heart';
 
-const CardItem = memo(props => {
+const NoteCardItem = memo(props => {
   const {
     dataInfo: {note_card},
     index,
@@ -16,30 +16,17 @@ const CardItem = memo(props => {
     navigation.navigate('articleDetail', {articleId: props.dataInfo?.id});
   };
 
-  const handleHeartPress = () => {};
-
   return (
     <TouchableOpacity
       style={[
         styles.root,
         {
-          // height:(note_card?.cover?.height / note_card?.cover?.width) * 250 + 100,
           marginRight: index % 2 ? 5 : 0,
         },
       ]}
       activeOpacity={0.7}
       onPress={() => handleCardItemPress()}>
-      <Image
-        source={{
-          uri:
-            note_card?.cover?.url +
-            '?imageView2/2/w/640/format/webp|imageMogr2/strip',
-        }}
-        style={[
-          styles.coverImgStyle,
-          // {height: (note_card?.cover?.height / note_card?.cover?.width) * 250},
-        ]}
-      />
+      <ResizeImage url={note_card?.cover?.url} />
       <Text style={styles.descTitleStyle}>{note_card?.display_title}</Text>
       <View style={styles.bottomInfoStyle}>
         <View style={styles.leftInfoStyle}>
@@ -49,18 +36,15 @@ const CardItem = memo(props => {
           />
           <Text style={styles.nicknameStyle}>{note_card?.user?.nickname}</Text>
         </View>
-        <TouchableOpacity
-          style={styles.rightInfoStyle}
-          activeOpacity={0.7}
-          onPress={() => handleHeartPress()}>
-          <Image
-            source={
-              note_card?.interact_info?.liked ? icon_heart : icon_un_heart
-            }
-            style={styles.heartImgStyle}
+        <View style={styles.rightInfoStyle}>
+          <Heart
+            value={note_card?.interact_info?.liked}
+            onValueChange={liked => {
+              // TODO
+            }}
           />
           <Text>{note_card?.interact_info?.liked_count}</Text>
-        </TouchableOpacity>
+        </View>
       </View>
     </TouchableOpacity>
   );
@@ -68,19 +52,13 @@ const CardItem = memo(props => {
 
 const styles = StyleSheet.create({
   root: {
-    flex: 1,
+    width: '48%',
     marginBottom: 8,
     marginLeft: 5,
     borderRadius: 10,
 
     backgroundColor: '#fff',
     overflow: 'hidden',
-  },
-  coverImgStyle: {
-    width: '100%',
-    height: 250,
-    borderTopLeftRadius: 10,
-    borderTopRightRadius: 10,
   },
   descTitleStyle: {
     paddingHorizontal: 10,
@@ -102,6 +80,7 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'row',
     alignItems: 'center',
+    height: '100%',
   },
   avatarImgStyle: {
     width: 20,
@@ -119,13 +98,8 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'flex-end',
     alignItems: 'center',
-  },
-  heartImgStyle: {
-    width: 20,
-    height: 20,
-    marginRight: 2,
-    resizeMode: 'contain',
+    height: '100%',
   },
 });
 
-export default CardItem;
+export default NoteCardItem;

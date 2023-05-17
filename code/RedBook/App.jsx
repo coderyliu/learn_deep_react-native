@@ -9,6 +9,8 @@ import AppWelcome from './src/screens/welcome';
 import AppLogin from './src/screens/login';
 import MainTab from './src/screens/maintab';
 import ArticleDetail from './src/screens/article-detail';
+import Search from './src/screens/search';
+import Cart from './src/screens/cart';
 
 // 使用栈导航
 const Stack = createStackNavigator();
@@ -46,6 +48,22 @@ const App = () => {
           <Stack.Screen
             name="articleDetail"
             component={ArticleDetail}
+            options={{
+              headerShown: false,
+              ...TransitionPresets.SlideFromRightIOS,
+            }}
+          />
+          <Stack.Screen
+            name="search"
+            component={Search}
+            options={{
+              headerShown: false,
+              ...TransitionPresets.SlideFromRightIOS,
+            }}
+          />
+          <Stack.Screen
+            name="cart"
+            component={Cart}
             options={{
               headerShown: false,
               ...TransitionPresets.SlideFromRightIOS,

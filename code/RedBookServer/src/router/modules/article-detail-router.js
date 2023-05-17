@@ -2,7 +2,7 @@ const KoaRouter = require("koa-router");
 
 const {
   getArticleDetailInfoCont,
-} = require("../../controllers/article-detail-model");
+} = require("../../controllers/article-detail-controller");
 
 const articleDetailRouter = new KoaRouter({
   prefix: "/article/detail",

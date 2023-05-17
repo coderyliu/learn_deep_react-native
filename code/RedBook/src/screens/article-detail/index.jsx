@@ -37,55 +37,57 @@ const ArticleDetail = memo(props => {
   });
 
   return (
-    <ScrollView style={styles.root}>
+    <View style={styles.root}>
       {/* 导航栏 */}
       <ArticleNavBar articleInfo={articleInfo} />
-      {/* 轮播区 */}
-      <AppSwiper onIndexChange={handleIndexChange}>
-        {articleInfo?.image_list?.map(item => {
-          return (
-            <TouchableOpacity
-              key={item?.file_id}
-              activeOpacity={0.9}
-              style={{width: '100%', height: '100%'}}>
-              <Image
-                style={{width: '100%', height: '100%', resizeMode: 'cover'}}
-                source={{
-                  uri:
-                    articleInfo?.image_list[currentIndex]?.url +
-                    '?imageView2/2/w/1920/format/webp|imageMogr2/strip',
-                }}
-              />
-            </TouchableOpacity>
-          );
-        })}
-      </AppSwiper>
-      <View style={styles.bottomInfoStyle}>
-        {/* 描述内容 */}
-        <View style={styles.infoWrapStyle}>
-          <Text style={styles.titleStyle}>{articleInfo?.title}</Text>
-          <Text style={styles.descStyle}>{articleInfo?.desc}</Text>
-          <View style={styles.tagWrapStyle}>
-            {articleInfo?.tag_list?.map(item => {
-              return (
-                <TouchableOpacity
-                  key={item.id}
-                  style={styles.tagStyle}
-                  activeOpacity={0.7}>
-                  <Text style={styles.tagTextStyle}>#{item.name}</Text>
-                </TouchableOpacity>
-              );
-            })}
+      <ScrollView>
+        {/* 轮播区 */}
+        <AppSwiper onIndexChange={handleIndexChange}>
+          {articleInfo?.image_list?.map(item => {
+            return (
+              <TouchableOpacity
+                key={item?.file_id}
+                activeOpacity={0.9}
+                style={{width: '100%', height: '100%'}}>
+                <Image
+                  style={{width: '100%', height: '100%', resizeMode: 'cover'}}
+                  source={{
+                    uri:
+                      articleInfo?.image_list[currentIndex]?.url +
+                      '?imageView2/2/w/1920/format/webp|imageMogr2/strip',
+                  }}
+                />
+              </TouchableOpacity>
+            );
+          })}
+        </AppSwiper>
+        <View style={styles.bottomInfoStyle}>
+          {/* 描述内容 */}
+          <View style={styles.infoWrapStyle}>
+            <Text style={styles.titleStyle}>{articleInfo?.title}</Text>
+            <Text style={styles.descStyle}>{articleInfo?.desc}</Text>
+            <View style={styles.tagWrapStyle}>
+              {articleInfo?.tag_list?.map(item => {
+                return (
+                  <TouchableOpacity
+                    key={item.id}
+                    style={styles.tagStyle}
+                    activeOpacity={0.7}>
+                    <Text style={styles.tagTextStyle}>#{item.name}</Text>
+                  </TouchableOpacity>
+                );
+              })}
+            </View>
+            <Text style={styles.timeStyle}>
+              {formatTime(articleInfo?.time, 'MM-DD') + ' '}
+              {articleInfo?.ip_location}
+            </Text>
           </View>
-          <Text style={styles.timeStyle}>
-            {formatTime(articleInfo?.time, 'MM-DD') + ' '}
-            {articleInfo?.ip_location}
-          </Text>
+          {/* 评论区 */}
         </View>
-        {/* 评论区 */}
-      </View>
-      {/* 底部栏 */}
-    </ScrollView>
+        {/* 底部栏 */}
+      </ScrollView>
+    </View>
   );
 });
 

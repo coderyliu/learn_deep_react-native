@@ -16,7 +16,7 @@ import {
 } from '../../../../store/modules/main/home';
 import {homeTopFilterList} from '../../../../assets/data/home-data';
 
-import CardItem from '../card-item';
+import NoteCardItem from '../../../../components/note-card-item';
 
 const CardList = memo(props => {
   const {cardList, cateType, loadMore} = props;
@@ -28,7 +28,7 @@ const CardList = memo(props => {
   };
 
   const renderItem = ({item, index}) => {
-    return <CardItem dataInfo={item} index={index}></CardItem>;
+    return <NoteCardItem dataInfo={item} index={index}></NoteCardItem>;
   };
 
   const renderHeaderComponent = () => {
@@ -116,6 +116,7 @@ const styles = StyleSheet.create({
   },
   headerTextStyle: {
     height: '100%',
+    lineHeight: 30,
     color: '#333',
     fontSize: 16,
   },
@@ -130,6 +131,7 @@ const styles = StyleSheet.create({
   openArrowImg: {
     width: 20,
     height: 20,
+    marginTop: 5,
     transform: [{rotate: '-90deg'}],
   },
   footerStyle: {

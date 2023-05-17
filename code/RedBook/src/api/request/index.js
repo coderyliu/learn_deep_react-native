@@ -12,6 +12,8 @@ class AppRequest {
     // 请求拦截器
     this.instance.interceptors.request.use(
       config => {
+        config.headers['x-userId'] = '5ef01a440000000001001a0a';
+
         return config;
       },
       err => {

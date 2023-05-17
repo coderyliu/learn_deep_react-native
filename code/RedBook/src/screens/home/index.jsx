@@ -1,4 +1,4 @@
-import React, {memo, useCallback, useEffect} from 'react';
+import React, {memo, useCallback, useEffect, useState} from 'react';
 import {useSelector, shallowEqual, useDispatch} from 'react-redux';
 import {View, StyleSheet} from 'react-native';
 
@@ -8,8 +8,11 @@ import {
 } from '../../store/modules/main/home';
 
 import CardList from './c-cpns/card-list';
+import TitleBar from './c-cpns/title-bar';
 
 const Home = memo(() => {
+  const [currentTab, setCurrentTab] = useState('发现');
+
   // redux相关
   const {findList, findTotal, categoryType, currentPage} = useSelector(
     state => ({
@@ -32,16 +35,25 @@ const Home = memo(() => {
     dispatch(changeCurrentPageAction(currentPage + 1));
   }, [dispatch, currentPage, findTotal]);
 
+  const handleTabChange = useCallback(
+    tab => {
+      setCurrentTab(tab);
+    },
+    [currentTab],
+  );
+
   return (
     <View style={styles.root}>
       {/* 顶部导航栏 */}
-
+      <TitleBar currentTab={currentTab} onTabChange={handleTabChange} />
       {/* 列表 */}
-      <CardList
-        cardList={findList}
-        cateType={categoryType}
-        loadMore={loadMore}
-      />
+      {currentTab === '发现' && (
+        <CardList
+          cardList={findList}
+          cateType={categoryType}
+          loadMore={loadMore}
+        />
+      )}
     </View>
   );
 });
